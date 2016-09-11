@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>custom AngularJS directive for a dropdown list</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="example/normalize.css">
+    <link rel="stylesheet" href="dist/angular-dropdowns.min.css">
+    <link rel="stylesheet" href="example/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script type="text/javascript" src="dist/angular-dropdowns.js"></script>
+    <script type="text/javascript" src="example/app.js"></script>
+  </head>
+  <body ng-app="app" style="margin-top:50px;">
+    <div ng-controller="AppCtrl">
+      <div style="margin:0 auto; text-align:center;">
+        
+
+        <h1> Select Vehicles</h1>
+
+        <p>You have selected: {{ddSelectSelected}}</p>
+        <div dropdown-select="ddSelectOptions" dropdown-model="ddSelectSelected" dropdown-disabled="dropdownsDisabled">
+        
+        </div>
+       <h1>Select Driver</h1>
+
+        <p>You have selected: {{ddMenuSelected}}</p>
+        <div dropdown-menu="ddMenuOptions" dropdown-model="ddMenuSelected" dropdown-disabled="dropdownsDisabled" class="btn-menu">
+       Select Driver to pair
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+        
+  
